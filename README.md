@@ -1,6 +1,6 @@
 # oui-list
 
-This program with read in a list of mac addresses and create a new list containing
+This program will read in a list of mac addresses and create a new list containing
 only the manufacturer identification portion of the mac address, excluding duplicates
 and print the new list to a text file.
 

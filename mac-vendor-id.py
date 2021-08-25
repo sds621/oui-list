@@ -1,8 +1,7 @@
 # Created by Sasha Sashington
 #!/usr/bin/env python
-''' This program with read in a list of mac addresses and create a new list containing
-only the manufacturer identification portion of the mac address, excluding duplicates
-and print the new list to a text file.
+''' This program will read in a list of mac addresses and create a new list containing
+only the OUI portion of the mac address, excluding duplicates, and print the new list to a text file.
 '''
 
 from __future__ import print_function, unicode_literals, division
@@ -26,4 +25,4 @@ for mac_addr in unknown_macs:
 # Print results to file
 vendor_str = '\n'.join(map(str,vendor_list))
 with open("vendor_list.txt", 'w') as output:
-    output.write(str(vendor_str))
+    output.write(vendor_str)
